@@ -1,13 +1,60 @@
 <template>
-  <div class="tab-bar-item">
+  <div class="tab-bar-item" @click="itemClick">
+
+    <!-- 正常图片 -->
+    <div v-if="!isActive">
       <slot name="item-icon"></slot>
+    </div>
+
+    <!-- 选中状态 -->
+    <div v-else>
+      <slot name="item-icon-active"></slot>
+    </div>
+
+    <!-- 文字 -->
+    <div :style="{'color':activeColor}">
       <slot name="item-text"></slot>
+    </div>
   </div>
 </template>
 
 <script>
   export default {
-    name : 'TabBarItem'
+    name : 'TabBarItem',
+    props:{
+
+      // 连接名
+      link:String,
+
+      // 选中颜色
+      color: {
+        type : String,
+        default : 'blue'
+      }
+    },
+    data(){
+      return {
+      }
+    },
+    computed:{
+
+      // 选中页面
+      isActive(){
+        return this.$route.path == this.link
+      },
+
+      // 选中时文字颜色
+      activeColor(){
+        return this.isActive?this.color:''
+      }
+    },
+    methods: {
+
+      // 点击跳转对应链接
+      itemClick(){
+        this.$router.replace(this.link)
+      },
+    }
   }
 </script>
 
