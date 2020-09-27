@@ -1,5 +1,5 @@
 <template>
-  <div class="tab-bar-item" @click="itemClick">
+  <div class="TabBarItem" @click="itemClick">
 
     <!-- 正常图片 -->
     <div v-if="!isActive">
@@ -29,7 +29,7 @@
       // 选中颜色
       color: {
         type : String,
-        default : 'blue'
+        default : '#333'
       }
     },
     data(){
@@ -59,7 +59,7 @@
 </script>
 
 <style lang="less" scoped>
-  .tab-bar-item {
+  .TabBarItem {
     flex: 1;
     text-align: center;
     font-size: 14px;

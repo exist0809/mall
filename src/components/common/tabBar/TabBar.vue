@@ -1,19 +1,19 @@
 <template>
-  <div class="tabBar">
+  <div class="TabBar">
     <slot></slot>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'tabBar',
+    name: 'TabBar',
     components: {
     }
   }
 </script>
 
 <style lang="less" scoped>
-  .tabBar {
+  .TabBar {
     display: flex;
     width: 100%;
     height: 49px;
