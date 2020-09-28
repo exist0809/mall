@@ -3,35 +3,35 @@
     <tab-bar>
 
       <!-- 首页 -->
-      <tab-bar-item link="/home" color="#d81e06">
+      <tab-bar-item link="/home" color="var(--themeColor)">
         <img slot="item-icon" src="~assets/img/tabbar/home.png" alt="">
         <img slot="item-icon-active" src="~assets/img/tabbar/home_active.png" alt="">
         <div slot="item-text">首页</div>
       </tab-bar-item>
 
       <!-- 消息 -->
-      <tab-bar-item link="/news" color="#d81e06">
+      <tab-bar-item link="/news" color="var(--themeColor)">
         <img slot="item-icon" src="~assets/img/tabbar/news.png" alt="">
         <img slot="item-icon-active" src="~assets/img/tabbar/news_active.png" alt="">
         <div slot="item-text">消息</div>
       </tab-bar-item>
 
       <!-- 添加 -->
-      <tab-bar-item link="/add" color="#d81e06">
+      <tab-bar-item link="/add" color="var(--themeColor)">
         <img slot="item-icon" src="~assets/img/tabbar/add.png" alt="" class="add">
         <img slot="item-icon-active" src="~assets/img/tabbar/add_active.png" alt="" class="add">
         <!-- <div slot="item-text">添加</div> -->
       </tab-bar-item>
 
       <!-- 购物车 -->
-      <tab-bar-item link="/car" color="#d81e06">
+      <tab-bar-item link="/car" color="var(--themeColor)">
         <img slot="item-icon" src="~assets/img/tabbar/car.png" alt="">
         <img slot="item-icon-active" src="~assets/img/tabbar/car_active.png" alt="">
         <div slot="item-text">购物车</div>
       </tab-bar-item>
 
       <!-- 我的 -->
-      <tab-bar-item link="/self" color="#d81e06">
+      <tab-bar-item link="/self" color="var(--themeColor)">
         <img slot="item-icon" src="~assets/img/tabbar/self.png" alt="">
         <img slot="item-icon-active" src="~assets/img/tabbar/self_active.png" alt="">
         <div slot="item-text">我的</div>

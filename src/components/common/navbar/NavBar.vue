@@ -1,8 +1,8 @@
 <template>
-  <div class="NavBar">
+  <div class="NavBar" :style="{'background':background}">
 
     <!-- 左侧 -->
-    <div class="nav-bar-left">
+    <div class="nav-bar-left" @click="clickLeft">
 
       <!-- 返回 -->
       <img v-if="left == 'back'" src="~assets/img/navbar/left_back.png" alt="">
@@ -15,7 +15,7 @@
     </div>
 
     <!-- 右侧 -->
-    <div class="nav-bar-right">
+    <div class="nav-bar-right" @click="clickRight">
 
       <!-- 返回 -->
       <img v-if="right == 'back'" src="~assets/img/navbar/right_back.png" alt="">
@@ -39,6 +39,12 @@
   export default {
     name: 'NavBar',
     props: {
+      // 导航条背景颜色
+      background: {
+        type: String,
+        default: "var(--bgColorDef)"
+      },
+
       // 左侧选择
       left: {
         type: String,
@@ -48,7 +54,7 @@
       // 标题颜色
       color: {
         type: String,
-        default: "#333"
+        default: "var(--fontColorDef)"
       },
 
       // 右侧选择
@@ -59,6 +65,18 @@
     },
     components: {
     },
+    methods: {
+
+      // 左侧点击事件
+      clickLeft(){
+        this.$emit('clickLeft')
+      },
+
+      // 右侧点击事件
+      clickRight(){
+        this.$emit('clickRight')
+      }
+    }
     
   }
 </script>
@@ -70,7 +88,6 @@
     height: 49px;
     position: fixed;
     top: 0;
-    background: #f5f5f5;
     text-align: center;
     line-height: 49px;
 
@@ -86,7 +103,7 @@
 
     .nav-bar-center {
       flex:5;
-      font-size: 18px;
+      font-size: var(--fontSizeLG);
     }
 
     .nav-bar-right {

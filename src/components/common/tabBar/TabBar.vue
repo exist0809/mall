@@ -19,7 +19,7 @@
     height: 49px;
     position: fixed;
     bottom: 0;
-    background: #f5f5f5;
-    box-shadow: 0px -1px 2px #eeeeee;
+    background: var(--bgColorDef);
+    box-shadow: 0px -1px 2px var(--borderColorXS);
   }
 </style>

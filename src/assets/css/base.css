@@ -1,9 +1,51 @@
 body {
   margin: 0;
   padding: 0;
+
+  /* 背景色 */
+  --themeColor: #d81e06; /* 主题默认 */
+  --bgColorDef: #f5f5f5;
+
+  --bgColorXS: #fff;
+  --bgColorSM: #f7f7f7;
+  --bgColorMD: #e5e5e5;
+  --bgColorSM: #eee;
+  --bgColorSM: #dfdfdf;
+
+  /* 字体颜色 */
+  --fontColorDef:#333; /* 主题默认 */
+
+  --fontColorXS: #eee;
+  --fontColorSM: #ccc;
+  --fontColorMD: #aaa;
+  --fontColorLG: #999;
+  --fontColorXL: #666;
+
+  /* 字体大小 */
+  --fontSizeDef:16px; /* 主题默认 */
+
+  --fontSizeXS: 12px;
+  --fontSizeSM: 14px;
+  --fontSizeMD: 18px;
+  --fontSizeLG: 20px;
+  --fontSizeXL: 22px;
+
+  /* 边框线条颜色 */
+  --borderColorDef:#f5f5f5; /* 主题默认 */
+
+  --borderColorXS:#e5e5e5;
+  --borderColorSM:#ccc;
+  --borderColorMD:#aaa;
+  --borderColorLG:#999;
+  --borderColorXL:#666;
 }
 
 img {
   display: block;
   vertical-align: middle;
 }
+
+li {
+  list-style: none;
+}
+

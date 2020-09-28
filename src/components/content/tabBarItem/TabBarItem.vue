@@ -29,7 +29,7 @@
       // 选中颜色
       color: {
         type : String,
-        default : '#333'
+        default : 'var(--fontColorDef)'
       }
     },
     data(){
@@ -62,7 +62,7 @@
   .TabBarItem {
     flex: 1;
     text-align: center;
-    font-size: 14px;
+    font-size: var(--fontSizeSM);
 
     img {
       width: 30px;
