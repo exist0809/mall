@@ -9,8 +9,8 @@ body {
   --bgColorXS: #fff;
   --bgColorSM: #f7f7f7;
   --bgColorMD: #e5e5e5;
-  --bgColorSM: #eee;
-  --bgColorSM: #dfdfdf;
+  --bgColorLG: #eee;
+  --bgColorXL: #dfdfdf;
 
   /* 字体颜色 */
   --fontColorDef:#333; /* 主题默认 */

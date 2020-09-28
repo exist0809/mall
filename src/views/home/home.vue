@@ -1,22 +1,19 @@
 <template>
   <div class="Home">
 
-    <!-- 导航条 -->
-    <nav-bar color="var(--fontColorDef)">
-      <div slot="center">首页</div>
-    </nav-bar>
-    
+    <!-- 搜索框 -->
+    <search-box></search-box>
   </div>
 </template>
 
 <script>
 
-import NavBar from "components/common/navbar/NavBar"
+import SearchBox from "components/common/searchbox/SearchBox"
 
 export default {
   name: 'Home',
   components: {
-    NavBar
+    SearchBox
   },
 }
 </script>
